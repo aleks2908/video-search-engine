@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Video Search Engine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="contaner header">
+        <img
+          src="./images/logo.png"
+          class="img-logo"
+          alt="site logo"
+          width="20"
+        />
+
+        <h1 class="page-title">Simple Video Search Engine</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="contaner">
+        <form class="search-form">
+          <input
+            class="header-input"
+            type="text"
+            name="keyword"
+            placeholder="Video search"
+          />
+
+          <button class="search-button" type="submit">
+            <svg class="search-icon">
+              <use href="./images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="search-results" data-action="open-modal"></div>
+
+        <div class="bottom-block">
+          <div class="paginator"></div>
+
+          <form class="google-search-form">
+            <button class="google-search-button" type="submit">
+              <svg class="google-search-icon">
+                <use href="./images/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+
+            <input
+              class="google-search-form-input"
+              type="text"
+              name="keyword"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- ========== MODAL WINDOW =========== -->
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <div class="modal-content">
+          <div style="height: 67px;"></div>
+          <div>
+            <div>
+              <iframe
+                class="video-frame"
+                width="100%"
+                height="auto"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="modal-video-title"></p>
+            <!-- <p class="modal-video-interactioncount"></p> -->
+            <p class="modal-media-data"></p>
+          </div>
+
+          <div class="video-frame-button-box">
+            <a href=" " target="_blank" class="modal-button visit-button"
+              >Visit</a
+            >
+            <button
+              type="button"
+              class="modal-button"
+              data-action="close-modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

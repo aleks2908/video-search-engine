@@ -1,0 +1,32 @@
+{
+  "name": "video-search-engine",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://aleks2908.github.io/video-search-engine",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /video-search-engine/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleks2908/video-search-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleks2908/video-search-engine/issues"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
