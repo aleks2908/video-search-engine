@@ -1,6 +1,6 @@
 // API_KEY = 'AIzaSyBF00erAC4EdZ8w00kV_XCoZCYOi9BN1Zw';
-API_KEY = 'AIzaSyAPrqYl6jMLpAcQWaKeT598TAGW05L0-RY';
-BASE_URL = 'https://www.googleapis.com';
+const API_KEY = 'AIzaSyAPrqYl6jMLpAcQWaKeT598TAGW05L0-RY';
+const BASE_URL = 'https://www.googleapis.com';
 
 CX = '8581c232ea3c1415f';
 // CX = '66691a38336e849bd';  мій
