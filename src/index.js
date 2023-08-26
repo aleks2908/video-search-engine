@@ -2,7 +2,7 @@
 const API_KEY = 'AIzaSyAPrqYl6jMLpAcQWaKeT598TAGW05L0-RY';
 const BASE_URL = 'https://www.googleapis.com';
 
-CX = '8581c232ea3c1415f';
+const CX = '8581c232ea3c1415f';
 // CX = '66691a38336e849bd';  мій
 import noPoster from './images/noposter.png';
 
